@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YEWriteDreamViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入关键词" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m5V-5l-PlQ">
+                    <rect key="frame" x="10" y="70" width="355" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我的儿子今年十岁，生病了，花粉过敏，从来不敢接触花。想看花海，向日葵或者薰衣草" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-EM-e5S">
+                    <rect key="frame" x="10" y="108" width="355" height="549"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.92741435766220093" green="0.84804201126098633" blue="0.62407040596008301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EmO-EM-e5S" secondAttribute="bottom" constant="10" id="2KC-fT-WC9"/>
+                <constraint firstAttribute="trailing" secondItem="EmO-EM-e5S" secondAttribute="trailing" constant="10" id="Orv-Nu-ylh"/>
+                <constraint firstAttribute="trailing" secondItem="m5V-5l-PlQ" secondAttribute="trailing" constant="10" id="XbX-pC-kZJ"/>
+                <constraint firstItem="m5V-5l-PlQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="d8E-Hf-ac0"/>
+                <constraint firstItem="EmO-EM-e5S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="dLE-88-Pa1"/>
+                <constraint firstItem="m5V-5l-PlQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="nfz-H8-TUk"/>
+                <constraint firstItem="EmO-EM-e5S" firstAttribute="top" secondItem="m5V-5l-PlQ" secondAttribute="bottom" constant="8" id="q9t-a1-OEW"/>
+            </constraints>
+            <point key="canvasLocation" x="-323" y="52"/>
+        </view>
+    </objects>
+</document>

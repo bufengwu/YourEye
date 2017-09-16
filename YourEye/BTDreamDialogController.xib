@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTDreamDialogController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3Q-iV-9dh">
+                    <rect key="frame" x="38" y="170" width="300" height="328"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="g2a-MC-Sgg">
+                            <rect key="frame" x="5" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="haT-27-MZA"/>
+                                <constraint firstAttribute="width" constant="40" id="rcQ-Ge-nhK"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白桦czh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZD-Lq-kq3">
+                            <rect key="frame" x="60" y="14" width="63" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三峡大坝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcK-Zd-gtj">
+                            <rect key="frame" x="10" y="58" width="280" height="21"/>
+                            <color key="backgroundColor" red="0.92741435766220093" green="0.84804201126098633" blue="0.62407040596008301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ9-Zb-cbk">
+                            <rect key="frame" x="5" y="293" width="78" height="30"/>
+                            <state key="normal" title="带上Ta的眼"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-ef-UlC">
+                            <rect key="frame" x="217" y="293" width="78" height="30"/>
+                            <state key="normal" title="跟随Ta的眼"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aar-F6-4DB">
+                            <rect key="frame" x="260" y="5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="jm6-JI-uPh"/>
+                                <constraint firstAttribute="width" constant="35" id="uIm-R7-ZXI"/>
+                            </constraints>
+                            <state key="normal" title="X" image="close"/>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="rfo-wl-zhI"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我的女儿十三岁，换了小儿麻痹症，曾经活泼开朗的孩子只能每天闷在家里。她很想看看三峡大坝。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U2d-Vp-8rR">
+                            <rect key="frame" x="10" y="94" width="280" height="184"/>
+                            <color key="backgroundColor" red="0.92741435766220093" green="0.84804201126098633" blue="0.62407040596008301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9ZD-Lq-kq3" firstAttribute="leading" secondItem="g2a-MC-Sgg" secondAttribute="trailing" constant="15" id="27O-li-mEo"/>
+                        <constraint firstAttribute="trailing" secondItem="U2d-Vp-8rR" secondAttribute="trailing" constant="10" id="3qc-K1-D2w"/>
+                        <constraint firstItem="BJ9-Zb-cbk" firstAttribute="leading" secondItem="i3Q-iV-9dh" secondAttribute="leading" constant="5" id="CtV-V7-dgv"/>
+                        <constraint firstItem="XcK-Zd-gtj" firstAttribute="leading" secondItem="i3Q-iV-9dh" secondAttribute="leading" constant="10" id="D6n-tM-caV"/>
+                        <constraint firstItem="U2d-Vp-8rR" firstAttribute="leading" secondItem="i3Q-iV-9dh" secondAttribute="leading" constant="10" id="Egl-BY-0YG"/>
+                        <constraint firstAttribute="width" constant="300" id="GEB-kl-N6n"/>
+                        <constraint firstAttribute="height" constant="328" id="NsB-nU-DLu"/>
+                        <constraint firstItem="aar-F6-4DB" firstAttribute="top" secondItem="i3Q-iV-9dh" secondAttribute="top" constant="5" id="QKy-Ps-P1F"/>
+                        <constraint firstItem="g2a-MC-Sgg" firstAttribute="top" secondItem="i3Q-iV-9dh" secondAttribute="top" constant="5" id="Rw5-oR-u4l"/>
+                        <constraint firstAttribute="bottom" secondItem="y1y-ef-UlC" secondAttribute="bottom" constant="5" id="SGC-3C-dWm"/>
+                        <constraint firstAttribute="trailing" secondItem="y1y-ef-UlC" secondAttribute="trailing" constant="5" id="emr-VY-Xmh"/>
+                        <constraint firstItem="9ZD-Lq-kq3" firstAttribute="centerY" secondItem="g2a-MC-Sgg" secondAttribute="centerY" id="jr4-Mo-NwV"/>
+                        <constraint firstAttribute="bottom" secondItem="BJ9-Zb-cbk" secondAttribute="bottom" constant="5" id="kRR-35-bMo"/>
+                        <constraint firstAttribute="trailing" secondItem="aar-F6-4DB" secondAttribute="trailing" constant="5" id="lKw-tK-9xf"/>
+                        <constraint firstItem="BJ9-Zb-cbk" firstAttribute="top" secondItem="U2d-Vp-8rR" secondAttribute="bottom" constant="15" id="rei-9C-tyd"/>
+                        <constraint firstAttribute="trailing" secondItem="XcK-Zd-gtj" secondAttribute="trailing" constant="10" id="tv1-CB-Ln6"/>
+                        <constraint firstItem="U2d-Vp-8rR" firstAttribute="top" secondItem="XcK-Zd-gtj" secondAttribute="bottom" constant="15" id="vUy-0g-wes"/>
+                        <constraint firstItem="XcK-Zd-gtj" firstAttribute="top" secondItem="g2a-MC-Sgg" secondAttribute="bottom" constant="13" id="y8k-Wr-QSD"/>
+                        <constraint firstItem="g2a-MC-Sgg" firstAttribute="leading" secondItem="i3Q-iV-9dh" secondAttribute="leading" constant="5" id="zNk-jk-3QV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92741435766220093" green="0.84804201126098633" blue="0.62407040596008301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i3Q-iV-9dh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5K5-cR-0cp"/>
+                <constraint firstItem="i3Q-iV-9dh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="slN-Ys-5AT"/>
+            </constraints>
+            <point key="canvasLocation" x="-685.5" y="16.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="16" height="16"/>
+        <image name="close" width="16" height="16"/>
+    </resources>
+</document>

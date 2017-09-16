@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7203B75B1F5D57B40059F0D3 /* BTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B75A1F5D57B40059F0D3 /* BTHomeViewController.m */; };
+		7203B76D1F5D5C340059F0D3 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7601F5D5C340059F0D3 /* TAAbstractDotView.m */; };
+		7203B76E1F5D5C340059F0D3 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7621F5D5C340059F0D3 /* TAAnimatedDotView.m */; };
+		7203B76F1F5D5C340059F0D3 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7641F5D5C340059F0D3 /* TADotView.m */; };
+		7203B7701F5D5C340059F0D3 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7661F5D5C340059F0D3 /* TAPageControl.m */; };
+		7203B7711F5D5C340059F0D3 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7681F5D5C340059F0D3 /* SDCollectionViewCell.m */; };
+		7203B7721F5D5C340059F0D3 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B76A1F5D5C340059F0D3 /* SDCycleScrollView.m */; };
+		7203B7731F5D5C340059F0D3 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B76C1F5D5C340059F0D3 /* UIView+SDExtension.m */; };
+		7203B7841F5D6DA10059F0D3 /* BTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7821F5D6DA10059F0D3 /* BTCollectionViewCell.m */; };
+		7203B7851F5D6DA10059F0D3 /* BTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203B7831F5D6DA10059F0D3 /* BTCollectionViewCell.xib */; };
+		7203B7881F5D720F0059F0D3 /* BTBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7871F5D720F0059F0D3 /* BTBannerCell.m */; };
+		7203B7961F5D7A490059F0D3 /* BTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B7951F5D7A490059F0D3 /* BTUtils.m */; };
+		7203B79C1F5D7F2E0059F0D3 /* BTDreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B79A1F5D7F2E0059F0D3 /* BTDreamViewController.m */; };
+		7203B79D1F5D7F2E0059F0D3 /* BTDreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7203B79B1F5D7F2E0059F0D3 /* BTDreamViewController.xib */; };
+		7203B7A11F5D84670059F0D3 /* BTDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7203B79F1F5D84670059F0D3 /* BTDiscoverViewController.m */; };
+		725633AA1F60145B0029F560 /* JXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 725633A91F60145B0029F560 /* JXButton.m */; };
+		725633AE1F6019A60029F560 /* YLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 725633AD1F6019A60029F560 /* YLButton.m */; };
+		725FB1711F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB16F1F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.m */; };
+		725FB1721F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725FB1701F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.xib */; };
+		725FB1761F5E88CF00A9BE6A /* BTAtricleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB1751F5E88CF00A9BE6A /* BTAtricleTableViewController.m */; };
+		725FB17A1F5E8D6700A9BE6A /* BTArticleAuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB1781F5E8D6700A9BE6A /* BTArticleAuthorCell.m */; };
+		725FB17B1F5E8D6700A9BE6A /* BTArticleAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725FB1791F5E8D6700A9BE6A /* BTArticleAuthorCell.xib */; };
+		725FB17F1F5E900500A9BE6A /* BTArticleWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB17D1F5E900500A9BE6A /* BTArticleWordCell.m */; };
+		725FB1801F5E900500A9BE6A /* BTArticleWordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725FB17E1F5E900500A9BE6A /* BTArticleWordCell.xib */; };
+		725FB1841F5E904800A9BE6A /* BTArticleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB1821F5E904800A9BE6A /* BTArticleImage.m */; };
+		725FB1851F5E904800A9BE6A /* BTArticleImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725FB1831F5E904800A9BE6A /* BTArticleImage.xib */; };
+		725FB18B1F5EAD7F00A9BE6A /* XLSphereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB18A1F5EAD7F00A9BE6A /* XLSphereView.m */; };
+		725FB1941F5EC15E00A9BE6A /* BTDreamDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB1921F5EC15E00A9BE6A /* BTDreamDialogController.m */; };
+		725FB1951F5EC15E00A9BE6A /* BTDreamDialogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725FB1931F5EC15E00A9BE6A /* BTDreamDialogController.xib */; };
+		725FB1981F5F84E500A9BE6A /* YEMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725FB1971F5F84E500A9BE6A /* YEMeTableViewController.m */; };
+		72736C701F611F6B001ADA10 /* YEWriteDreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72736C6E1F611F6B001ADA10 /* YEWriteDreamViewController.m */; };
+		72736C711F611F6B001ADA10 /* YEWriteDreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72736C6F1F611F6B001ADA10 /* YEWriteDreamViewController.xib */; };
+		72736C751F6123CB001ADA10 /* YERegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72736C731F6123CB001ADA10 /* YERegViewController.m */; };
+		72736C761F6123CB001ADA10 /* YERegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72736C741F6123CB001ADA10 /* YERegViewController.xib */; };
+		72736C7D1F612993001ADA10 /* HisPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72736C7C1F612993001ADA10 /* HisPageViewController.m */; };
+		7286DABA1F5D4DC400D2F992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7286DAB91F5D4DC400D2F992 /* main.m */; };
+		7286DABD1F5D4DC500D2F992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7286DABC1F5D4DC500D2F992 /* AppDelegate.m */; };
+		7286DAC51F5D4DC500D2F992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7286DAC41F5D4DC500D2F992 /* Assets.xcassets */; };
+		7286DAC81F5D4DC500D2F992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7286DAC61F5D4DC500D2F992 /* LaunchScreen.storyboard */; };
+		7286DAD11F5D4DEF00D2F992 /* BTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7286DAD01F5D4DEF00D2F992 /* BTTabBarController.m */; };
+		7286DAD51F5D515B00D2F992 /* ZYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7286DAD41F5D515B00D2F992 /* ZYBaseViewController.m */; };
+		728DC45D1F67D06100D27492 /* TEUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC45C1F67D06100D27492 /* TEUserManager.m */; };
+		728DC4601F67D0E700D27492 /* TEUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC45F1F67D0E700D27492 /* TEUserProfile.m */; };
+		728DC4631F67DA6700D27492 /* YEModifyPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC4621F67DA6700D27492 /* YEModifyPersonInfoViewController.m */; };
+		728DC4661F67DC5600D27492 /* YEFansListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC4651F67DC5600D27492 /* YEFansListViewController.m */; };
+		728DC4691F67DC6B00D27492 /* YEFocusListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC4681F67DC6B00D27492 /* YEFocusListViewController.m */; };
+		728DC46C1F67DE0C00D27492 /* ZYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DC46B1F67DE0C00D27492 /* ZYBaseTableViewController.m */; };
+		72A418DE1F6238210054E422 /* YEPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A418DC1F6238210054E422 /* YEPersonInfoViewController.m */; };
+		72A418DF1F6238210054E422 /* YEPersonInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A418DD1F6238210054E422 /* YEPersonInfoViewController.xib */; };
+		72A418EB1F62987B0054E422 /* YEPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A418E91F62987B0054E422 /* YEPageVC.m */; };
+		72A418EC1F62987B0054E422 /* YEPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A418EA1F62987B0054E422 /* YEPageVC.xib */; };
+		72A418F51F62A0B50054E422 /* YESearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A418F41F62A0B50054E422 /* YESearchViewController.m */; };
+		72A6D8591F6A610800E9031F /* ZYDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A6D8581F6A610800E9031F /* ZYDialogController.m */; };
+		72DA9B2F1F60E76100459B64 /* YEEyeDiaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DA9B2E1F60E76100459B64 /* YEEyeDiaryTableViewController.m */; };
+		72DA9B361F60E9A500459B64 /* YELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DA9B341F60E9A500459B64 /* YELoginViewController.m */; };
+		72DA9B371F60E9A500459B64 /* YELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DA9B351F60E9A500459B64 /* YELoginViewController.xib */; };
+		7992BA8E7380B08F9A84E01E /* Pods_YourEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F6B92123B4CDA29C1A679A /* Pods_YourEye.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00953611E12329BD23D6FE89 /* Pods-YourEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourEye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YourEye/Pods-YourEye.debug.xcconfig"; sourceTree = "<group>"; };
+		03F6B92123B4CDA29C1A679A /* Pods_YourEye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YourEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7203B7591F5D57B40059F0D3 /* BTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHomeViewController.h; sourceTree = "<group>"; };
+		7203B75A1F5D57B40059F0D3 /* BTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHomeViewController.m; sourceTree = "<group>"; };
+		7203B75F1F5D5C340059F0D3 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		7203B7601F5D5C340059F0D3 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		7203B7611F5D5C340059F0D3 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		7203B7621F5D5C340059F0D3 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		7203B7631F5D5C340059F0D3 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		7203B7641F5D5C340059F0D3 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		7203B7651F5D5C340059F0D3 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		7203B7661F5D5C340059F0D3 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		7203B7671F5D5C340059F0D3 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		7203B7681F5D5C340059F0D3 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		7203B7691F5D5C340059F0D3 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		7203B76A1F5D5C340059F0D3 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		7203B76B1F5D5C340059F0D3 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		7203B76C1F5D5C340059F0D3 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		7203B7811F5D6DA10059F0D3 /* BTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCollectionViewCell.h; sourceTree = "<group>"; };
+		7203B7821F5D6DA10059F0D3 /* BTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCollectionViewCell.m; sourceTree = "<group>"; };
+		7203B7831F5D6DA10059F0D3 /* BTCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTCollectionViewCell.xib; sourceTree = "<group>"; };
+		7203B7861F5D720F0059F0D3 /* BTBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTBannerCell.h; sourceTree = "<group>"; };
+		7203B7871F5D720F0059F0D3 /* BTBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTBannerCell.m; sourceTree = "<group>"; };
+		7203B7941F5D7A490059F0D3 /* BTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUtils.h; sourceTree = "<group>"; };
+		7203B7951F5D7A490059F0D3 /* BTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUtils.m; sourceTree = "<group>"; };
+		7203B7991F5D7F2E0059F0D3 /* BTDreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDreamViewController.h; sourceTree = "<group>"; };
+		7203B79A1F5D7F2E0059F0D3 /* BTDreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDreamViewController.m; sourceTree = "<group>"; };
+		7203B79B1F5D7F2E0059F0D3 /* BTDreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTDreamViewController.xib; sourceTree = "<group>"; };
+		7203B79E1F5D84670059F0D3 /* BTDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDiscoverViewController.h; sourceTree = "<group>"; };
+		7203B79F1F5D84670059F0D3 /* BTDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDiscoverViewController.m; sourceTree = "<group>"; };
+		725633A81F60145B0029F560 /* JXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXButton.h; sourceTree = "<group>"; };
+		725633A91F60145B0029F560 /* JXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXButton.m; sourceTree = "<group>"; };
+		725633AC1F6019A60029F560 /* YLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLButton.h; sourceTree = "<group>"; };
+		725633AD1F6019A60029F560 /* YLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLButton.m; sourceTree = "<group>"; };
+		725FB16E1F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		725FB16F1F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDiscoverTableViewCell.m; sourceTree = "<group>"; };
+		725FB1701F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYDiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		725FB1741F5E88CF00A9BE6A /* BTAtricleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTAtricleTableViewController.h; sourceTree = "<group>"; };
+		725FB1751F5E88CF00A9BE6A /* BTAtricleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTAtricleTableViewController.m; sourceTree = "<group>"; };
+		725FB1771F5E8D6700A9BE6A /* BTArticleAuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTArticleAuthorCell.h; sourceTree = "<group>"; };
+		725FB1781F5E8D6700A9BE6A /* BTArticleAuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTArticleAuthorCell.m; sourceTree = "<group>"; };
+		725FB1791F5E8D6700A9BE6A /* BTArticleAuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTArticleAuthorCell.xib; sourceTree = "<group>"; };
+		725FB17C1F5E900500A9BE6A /* BTArticleWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTArticleWordCell.h; sourceTree = "<group>"; };
+		725FB17D1F5E900500A9BE6A /* BTArticleWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTArticleWordCell.m; sourceTree = "<group>"; };
+		725FB17E1F5E900500A9BE6A /* BTArticleWordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTArticleWordCell.xib; sourceTree = "<group>"; };
+		725FB1811F5E904800A9BE6A /* BTArticleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTArticleImage.h; sourceTree = "<group>"; };
+		725FB1821F5E904800A9BE6A /* BTArticleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTArticleImage.m; sourceTree = "<group>"; };
+		725FB1831F5E904800A9BE6A /* BTArticleImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTArticleImage.xib; sourceTree = "<group>"; };
+		725FB1871F5EAD7F00A9BE6A /* XLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMatrix.h; sourceTree = "<group>"; };
+		725FB1881F5EAD7F00A9BE6A /* XLPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPoint.h; sourceTree = "<group>"; };
+		725FB1891F5EAD7F00A9BE6A /* XLSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSphereView.h; sourceTree = "<group>"; };
+		725FB18A1F5EAD7F00A9BE6A /* XLSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSphereView.m; sourceTree = "<group>"; };
+		725FB1911F5EC15E00A9BE6A /* BTDreamDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDreamDialogController.h; sourceTree = "<group>"; };
+		725FB1921F5EC15E00A9BE6A /* BTDreamDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDreamDialogController.m; sourceTree = "<group>"; };
+		725FB1931F5EC15E00A9BE6A /* BTDreamDialogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTDreamDialogController.xib; sourceTree = "<group>"; };
+		725FB1961F5F84E500A9BE6A /* YEMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEMeTableViewController.h; sourceTree = "<group>"; };
+		725FB1971F5F84E500A9BE6A /* YEMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEMeTableViewController.m; sourceTree = "<group>"; };
+		72736C6D1F611F6B001ADA10 /* YEWriteDreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEWriteDreamViewController.h; sourceTree = "<group>"; };
+		72736C6E1F611F6B001ADA10 /* YEWriteDreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEWriteDreamViewController.m; sourceTree = "<group>"; };
+		72736C6F1F611F6B001ADA10 /* YEWriteDreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YEWriteDreamViewController.xib; sourceTree = "<group>"; };
+		72736C721F6123CB001ADA10 /* YERegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YERegViewController.h; sourceTree = "<group>"; };
+		72736C731F6123CB001ADA10 /* YERegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YERegViewController.m; sourceTree = "<group>"; };
+		72736C741F6123CB001ADA10 /* YERegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YERegViewController.xib; sourceTree = "<group>"; };
+		72736C7B1F612993001ADA10 /* HisPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HisPageViewController.h; sourceTree = "<group>"; };
+		72736C7C1F612993001ADA10 /* HisPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HisPageViewController.m; sourceTree = "<group>"; };
+		7286DAB51F5D4DC400D2F992 /* YourEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7286DAB91F5D4DC400D2F992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7286DABB1F5D4DC400D2F992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7286DABC1F5D4DC500D2F992 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7286DAC41F5D4DC500D2F992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7286DAC71F5D4DC500D2F992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7286DAC91F5D4DC500D2F992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7286DACF1F5D4DEF00D2F992 /* BTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBarController.h; sourceTree = "<group>"; };
+		7286DAD01F5D4DEF00D2F992 /* BTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTabBarController.m; sourceTree = "<group>"; };
+		7286DAD21F5D4E2F00D2F992 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		7286DAD31F5D515B00D2F992 /* ZYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseViewController.h; sourceTree = "<group>"; };
+		7286DAD41F5D515B00D2F992 /* ZYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseViewController.m; sourceTree = "<group>"; };
+		728DC45B1F67D06100D27492 /* TEUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEUserManager.h; sourceTree = "<group>"; };
+		728DC45C1F67D06100D27492 /* TEUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEUserManager.m; sourceTree = "<group>"; };
+		728DC45E1F67D0E700D27492 /* TEUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEUserProfile.h; sourceTree = "<group>"; };
+		728DC45F1F67D0E700D27492 /* TEUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEUserProfile.m; sourceTree = "<group>"; };
+		728DC4611F67DA6700D27492 /* YEModifyPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEModifyPersonInfoViewController.h; sourceTree = "<group>"; };
+		728DC4621F67DA6700D27492 /* YEModifyPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEModifyPersonInfoViewController.m; sourceTree = "<group>"; };
+		728DC4641F67DC5600D27492 /* YEFansListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEFansListViewController.h; sourceTree = "<group>"; };
+		728DC4651F67DC5600D27492 /* YEFansListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEFansListViewController.m; sourceTree = "<group>"; };
+		728DC4671F67DC6B00D27492 /* YEFocusListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEFocusListViewController.h; sourceTree = "<group>"; };
+		728DC4681F67DC6B00D27492 /* YEFocusListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEFocusListViewController.m; sourceTree = "<group>"; };
+		728DC46A1F67DE0C00D27492 /* ZYBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBaseTableViewController.h; sourceTree = "<group>"; };
+		728DC46B1F67DE0C00D27492 /* ZYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBaseTableViewController.m; sourceTree = "<group>"; };
+		72A418DB1F6238210054E422 /* YEPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YEPersonInfoViewController.h; path = YourEye/ViewControllers/YEPersonInfoVC/YEPersonInfoViewController.h; sourceTree = SOURCE_ROOT; };
+		72A418DC1F6238210054E422 /* YEPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YEPersonInfoViewController.m; path = YourEye/ViewControllers/YEPersonInfoVC/YEPersonInfoViewController.m; sourceTree = SOURCE_ROOT; };
+		72A418DD1F6238210054E422 /* YEPersonInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YEPersonInfoViewController.xib; path = YourEye/ViewControllers/YEPersonInfoVC/YEPersonInfoViewController.xib; sourceTree = SOURCE_ROOT; };
+		72A418E81F62987B0054E422 /* YEPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEPageVC.h; sourceTree = "<group>"; };
+		72A418E91F62987B0054E422 /* YEPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEPageVC.m; sourceTree = "<group>"; };
+		72A418EA1F62987B0054E422 /* YEPageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YEPageVC.xib; sourceTree = "<group>"; };
+		72A418F31F62A0B50054E422 /* YESearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESearchViewController.h; sourceTree = "<group>"; };
+		72A418F41F62A0B50054E422 /* YESearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESearchViewController.m; sourceTree = "<group>"; };
+		72A6D8571F6A610800E9031F /* ZYDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDialogController.h; sourceTree = "<group>"; };
+		72A6D8581F6A610800E9031F /* ZYDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDialogController.m; sourceTree = "<group>"; };
+		72DA9B2D1F60E76100459B64 /* YEEyeDiaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YEEyeDiaryTableViewController.h; sourceTree = "<group>"; };
+		72DA9B2E1F60E76100459B64 /* YEEyeDiaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEEyeDiaryTableViewController.m; sourceTree = "<group>"; };
+		72DA9B331F60E9A500459B64 /* YELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YELoginViewController.h; sourceTree = "<group>"; };
+		72DA9B341F60E9A500459B64 /* YELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YELoginViewController.m; sourceTree = "<group>"; };
+		72DA9B351F60E9A500459B64 /* YELoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YELoginViewController.xib; sourceTree = "<group>"; };
+		8F8FF443A72BB52D0F62512E /* Pods-YourEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YourEye.release.xcconfig"; path = "Pods/Target Support Files/Pods-YourEye/Pods-YourEye.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7286DAB21F5D4DC400D2F992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7992BA8E7380B08F9A84E01E /* Pods_YourEye.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		627DEA4D237C109F80DF05FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03F6B92123B4CDA29C1A679A /* Pods_YourEye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7203B75C1F5D5C340059F0D3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				725633A81F60145B0029F560 /* JXButton.h */,
+				725633A91F60145B0029F560 /* JXButton.m */,
+				725633AB1F6019A60029F560 /* YLButton */,
+				725FB1861F5EAD7F00A9BE6A /* SphereView */,
+				7203B75D1F5D5C340059F0D3 /* SDCycleScrollView */,
+			);
+			name = Lib;
+			path = ../Lib;
+			sourceTree = "<group>";
+		};
+		7203B75D1F5D5C340059F0D3 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7203B75E1F5D5C340059F0D3 /* PageControl */,
+				7203B7671F5D5C340059F0D3 /* SDCollectionViewCell.h */,
+				7203B7681F5D5C340059F0D3 /* SDCollectionViewCell.m */,
+				7203B7691F5D5C340059F0D3 /* SDCycleScrollView.h */,
+				7203B76A1F5D5C340059F0D3 /* SDCycleScrollView.m */,
+				7203B76B1F5D5C340059F0D3 /* UIView+SDExtension.h */,
+				7203B76C1F5D5C340059F0D3 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		7203B75E1F5D5C340059F0D3 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				7203B75F1F5D5C340059F0D3 /* TAAbstractDotView.h */,
+				7203B7601F5D5C340059F0D3 /* TAAbstractDotView.m */,
+				7203B7611F5D5C340059F0D3 /* TAAnimatedDotView.h */,
+				7203B7621F5D5C340059F0D3 /* TAAnimatedDotView.m */,
+				7203B7631F5D5C340059F0D3 /* TADotView.h */,
+				7203B7641F5D5C340059F0D3 /* TADotView.m */,
+				7203B7651F5D5C340059F0D3 /* TAPageControl.h */,
+				7203B7661F5D5C340059F0D3 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		7203B7891F5D7A130059F0D3 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				725FB1961F5F84E500A9BE6A /* YEMeTableViewController.h */,
+				725FB1971F5F84E500A9BE6A /* YEMeTableViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		7203B7931F5D7A490059F0D3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				72A6D8571F6A610800E9031F /* ZYDialogController.h */,
+				72A6D8581F6A610800E9031F /* ZYDialogController.m */,
+				7203B7941F5D7A490059F0D3 /* BTUtils.h */,
+				7203B7951F5D7A490059F0D3 /* BTUtils.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		725633AB1F6019A60029F560 /* YLButton */ = {
+			isa = PBXGroup;
+			children = (
+				725633AC1F6019A60029F560 /* YLButton.h */,
+				725633AD1F6019A60029F560 /* YLButton.m */,
+			);
+			path = YLButton;
+			sourceTree = "<group>";
+		};
+		725FB1211F5E325500A9BE6A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7203B7591F5D57B40059F0D3 /* BTHomeViewController.h */,
+				7203B75A1F5D57B40059F0D3 /* BTHomeViewController.m */,
+				7203B7861F5D720F0059F0D3 /* BTBannerCell.h */,
+				7203B7871F5D720F0059F0D3 /* BTBannerCell.m */,
+				7203B7811F5D6DA10059F0D3 /* BTCollectionViewCell.h */,
+				7203B7821F5D6DA10059F0D3 /* BTCollectionViewCell.m */,
+				7203B7831F5D6DA10059F0D3 /* BTCollectionViewCell.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		725FB1231F5E327400A9BE6A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				7203B79E1F5D84670059F0D3 /* BTDiscoverViewController.h */,
+				7203B79F1F5D84670059F0D3 /* BTDiscoverViewController.m */,
+				725FB16E1F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.h */,
+				725FB16F1F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.m */,
+				725FB1701F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.xib */,
+				72A418F31F62A0B50054E422 /* YESearchViewController.h */,
+				72A418F41F62A0B50054E422 /* YESearchViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		725FB1241F5E329F00A9BE6A /* Dream */ = {
+			isa = PBXGroup;
+			children = (
+				7203B7991F5D7F2E0059F0D3 /* BTDreamViewController.h */,
+				7203B79A1F5D7F2E0059F0D3 /* BTDreamViewController.m */,
+				725FB1911F5EC15E00A9BE6A /* BTDreamDialogController.h */,
+				725FB1921F5EC15E00A9BE6A /* BTDreamDialogController.m */,
+				725FB1931F5EC15E00A9BE6A /* BTDreamDialogController.xib */,
+				7203B79B1F5D7F2E0059F0D3 /* BTDreamViewController.xib */,
+			);
+			name = Dream;
+			sourceTree = "<group>";
+		};
+		725FB1731F5E878700A9BE6A /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				725FB1741F5E88CF00A9BE6A /* BTAtricleTableViewController.h */,
+				725FB1751F5E88CF00A9BE6A /* BTAtricleTableViewController.m */,
+				725FB1811F5E904800A9BE6A /* BTArticleImage.h */,
+				725FB1821F5E904800A9BE6A /* BTArticleImage.m */,
+				725FB1831F5E904800A9BE6A /* BTArticleImage.xib */,
+				725FB17C1F5E900500A9BE6A /* BTArticleWordCell.h */,
+				725FB17D1F5E900500A9BE6A /* BTArticleWordCell.m */,
+				725FB17E1F5E900500A9BE6A /* BTArticleWordCell.xib */,
+				725FB1771F5E8D6700A9BE6A /* BTArticleAuthorCell.h */,
+				725FB1781F5E8D6700A9BE6A /* BTArticleAuthorCell.m */,
+				725FB1791F5E8D6700A9BE6A /* BTArticleAuthorCell.xib */,
+			);
+			name = Article;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		725FB1861F5EAD7F00A9BE6A /* SphereView */ = {
+			isa = PBXGroup;
+			children = (
+				725FB1871F5EAD7F00A9BE6A /* XLMatrix.h */,
+				725FB1881F5EAD7F00A9BE6A /* XLPoint.h */,
+				725FB1891F5EAD7F00A9BE6A /* XLSphereView.h */,
+				725FB18A1F5EAD7F00A9BE6A /* XLSphereView.m */,
+			);
+			path = SphereView;
+			sourceTree = "<group>";
+		};
+		72736C771F61295E001ADA10 /* YEHisPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				72A418DB1F6238210054E422 /* YEPersonInfoViewController.h */,
+				72A418DC1F6238210054E422 /* YEPersonInfoViewController.m */,
+				72A418DD1F6238210054E422 /* YEPersonInfoViewController.xib */,
+				72A418E81F62987B0054E422 /* YEPageVC.h */,
+				72A418E91F62987B0054E422 /* YEPageVC.m */,
+				72A418EA1F62987B0054E422 /* YEPageVC.xib */,
+				72736C7B1F612993001ADA10 /* HisPageViewController.h */,
+				72736C7C1F612993001ADA10 /* HisPageViewController.m */,
+			);
+			path = YEHisPageVC;
+			sourceTree = "<group>";
+		};
+		7286DAAC1F5D4DC400D2F992 = {
+			isa = PBXGroup;
+			children = (
+				7286DAB71F5D4DC400D2F992 /* YourEye */,
+				7286DAB61F5D4DC400D2F992 /* Products */,
+				9E52C57705914DCBB6F51CB6 /* Pods */,
+				627DEA4D237C109F80DF05FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7286DAB61F5D4DC400D2F992 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7286DAB51F5D4DC400D2F992 /* YourEye.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7286DAB71F5D4DC400D2F992 /* YourEye */ = {
+			isa = PBXGroup;
+			children = (
+				7286DAD21F5D4E2F00D2F992 /* PrefixHeader.pch */,
+				7286DABB1F5D4DC400D2F992 /* AppDelegate.h */,
+				7286DABC1F5D4DC500D2F992 /* AppDelegate.m */,
+				7286DACF1F5D4DEF00D2F992 /* BTTabBarController.h */,
+				7286DAD01F5D4DEF00D2F992 /* BTTabBarController.m */,
+				7286DAD31F5D515B00D2F992 /* ZYBaseViewController.h */,
+				7286DAD41F5D515B00D2F992 /* ZYBaseViewController.m */,
+				728DC46A1F67DE0C00D27492 /* ZYBaseTableViewController.h */,
+				728DC46B1F67DE0C00D27492 /* ZYBaseTableViewController.m */,
+				728DC45E1F67D0E700D27492 /* TEUserProfile.h */,
+				728DC45F1F67D0E700D27492 /* TEUserProfile.m */,
+				728DC45B1F67D06100D27492 /* TEUserManager.h */,
+				728DC45C1F67D06100D27492 /* TEUserManager.m */,
+				72DA9B2C1F60E68800459B64 /* ViewControllers */,
+				725FB1211F5E325500A9BE6A /* Home */,
+				725FB1231F5E327400A9BE6A /* Discover */,
+				725FB1241F5E329F00A9BE6A /* Dream */,
+				7203B7891F5D7A130059F0D3 /* Me */,
+				7203B7931F5D7A490059F0D3 /* Tool */,
+				7203B75C1F5D5C340059F0D3 /* Lib */,
+				7286DAB81F5D4DC400D2F992 /* Supporting Files */,
+			);
+			path = YourEye;
+			sourceTree = "<group>";
+		};
+		7286DAB81F5D4DC400D2F992 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7286DAC41F5D4DC500D2F992 /* Assets.xcassets */,
+				7286DAC61F5D4DC500D2F992 /* LaunchScreen.storyboard */,
+				7286DAC91F5D4DC500D2F992 /* Info.plist */,
+				7286DAB91F5D4DC400D2F992 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72DA9B2C1F60E68800459B64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				725FB1731F5E878700A9BE6A /* Article */,
+				72736C771F61295E001ADA10 /* YEHisPageVC */,
+				72DA9B2D1F60E76100459B64 /* YEEyeDiaryTableViewController.h */,
+				72DA9B2E1F60E76100459B64 /* YEEyeDiaryTableViewController.m */,
+				728DC4611F67DA6700D27492 /* YEModifyPersonInfoViewController.h */,
+				728DC4621F67DA6700D27492 /* YEModifyPersonInfoViewController.m */,
+				728DC4641F67DC5600D27492 /* YEFansListViewController.h */,
+				728DC4651F67DC5600D27492 /* YEFansListViewController.m */,
+				728DC4671F67DC6B00D27492 /* YEFocusListViewController.h */,
+				728DC4681F67DC6B00D27492 /* YEFocusListViewController.m */,
+				72736C6D1F611F6B001ADA10 /* YEWriteDreamViewController.h */,
+				72736C6E1F611F6B001ADA10 /* YEWriteDreamViewController.m */,
+				72736C6F1F611F6B001ADA10 /* YEWriteDreamViewController.xib */,
+				72DA9B331F60E9A500459B64 /* YELoginViewController.h */,
+				72DA9B341F60E9A500459B64 /* YELoginViewController.m */,
+				72DA9B351F60E9A500459B64 /* YELoginViewController.xib */,
+				72736C721F6123CB001ADA10 /* YERegViewController.h */,
+				72736C731F6123CB001ADA10 /* YERegViewController.m */,
+				72736C741F6123CB001ADA10 /* YERegViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E52C57705914DCBB6F51CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00953611E12329BD23D6FE89 /* Pods-YourEye.debug.xcconfig */,
+				8F8FF443A72BB52D0F62512E /* Pods-YourEye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7286DAB41F5D4DC400D2F992 /* YourEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7286DACC1F5D4DC500D2F992 /* Build configuration list for PBXNativeTarget "YourEye" */;
+			buildPhases = (
+				D6D371FD73300184CCA5CF95 /* [CP] Check Pods Manifest.lock */,
+				7286DAB11F5D4DC400D2F992 /* Sources */,
+				7286DAB21F5D4DC400D2F992 /* Frameworks */,
+				7286DAB31F5D4DC400D2F992 /* Resources */,
+				03EDBFF4FAEB000741C38529 /* [CP] Embed Pods Frameworks */,
+				2D5DD423FDA90BBC7E553268 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YourEye;
+			productName = YourEye;
+			productReference = 7286DAB51F5D4DC400D2F992 /* YourEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7286DAAD1F5D4DC400D2F992 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = DevKK;
+				TargetAttributes = {
+					7286DAB41F5D4DC400D2F992 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7286DAB01F5D4DC400D2F992 /* Build configuration list for PBXProject "YourEye" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7286DAAC1F5D4DC400D2F992;
+			productRefGroup = 7286DAB61F5D4DC400D2F992 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7286DAB41F5D4DC400D2F992 /* YourEye */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7286DAB31F5D4DC400D2F992 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725FB1851F5E904800A9BE6A /* BTArticleImage.xib in Resources */,
+				72A418EC1F62987B0054E422 /* YEPageVC.xib in Resources */,
+				725FB1721F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.xib in Resources */,
+				7203B79D1F5D7F2E0059F0D3 /* BTDreamViewController.xib in Resources */,
+				725FB1801F5E900500A9BE6A /* BTArticleWordCell.xib in Resources */,
+				7286DAC81F5D4DC500D2F992 /* LaunchScreen.storyboard in Resources */,
+				7286DAC51F5D4DC500D2F992 /* Assets.xcassets in Resources */,
+				72736C761F6123CB001ADA10 /* YERegViewController.xib in Resources */,
+				725FB1951F5EC15E00A9BE6A /* BTDreamDialogController.xib in Resources */,
+				72A418DF1F6238210054E422 /* YEPersonInfoViewController.xib in Resources */,
+				72DA9B371F60E9A500459B64 /* YELoginViewController.xib in Resources */,
+				725FB17B1F5E8D6700A9BE6A /* BTArticleAuthorCell.xib in Resources */,
+				7203B7851F5D6DA10059F0D3 /* BTCollectionViewCell.xib in Resources */,
+				72736C711F611F6B001ADA10 /* YEWriteDreamViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03EDBFF4FAEB000741C38529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourEye/Pods-YourEye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D5DD423FDA90BBC7E553268 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YourEye/Pods-YourEye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6D371FD73300184CCA5CF95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7286DAB11F5D4DC400D2F992 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725FB1841F5E904800A9BE6A /* BTArticleImage.m in Sources */,
+				725FB1761F5E88CF00A9BE6A /* BTAtricleTableViewController.m in Sources */,
+				72736C7D1F612993001ADA10 /* HisPageViewController.m in Sources */,
+				7286DAD11F5D4DEF00D2F992 /* BTTabBarController.m in Sources */,
+				7203B76E1F5D5C340059F0D3 /* TAAnimatedDotView.m in Sources */,
+				7203B79C1F5D7F2E0059F0D3 /* BTDreamViewController.m in Sources */,
+				72A418F51F62A0B50054E422 /* YESearchViewController.m in Sources */,
+				728DC46C1F67DE0C00D27492 /* ZYBaseTableViewController.m in Sources */,
+				725633AE1F6019A60029F560 /* YLButton.m in Sources */,
+				72A418DE1F6238210054E422 /* YEPersonInfoViewController.m in Sources */,
+				7203B76D1F5D5C340059F0D3 /* TAAbstractDotView.m in Sources */,
+				72DA9B361F60E9A500459B64 /* YELoginViewController.m in Sources */,
+				72A418EB1F62987B0054E422 /* YEPageVC.m in Sources */,
+				7203B7881F5D720F0059F0D3 /* BTBannerCell.m in Sources */,
+				728DC4601F67D0E700D27492 /* TEUserProfile.m in Sources */,
+				7203B7711F5D5C340059F0D3 /* SDCollectionViewCell.m in Sources */,
+				7203B7961F5D7A490059F0D3 /* BTUtils.m in Sources */,
+				725FB18B1F5EAD7F00A9BE6A /* XLSphereView.m in Sources */,
+				7203B75B1F5D57B40059F0D3 /* BTHomeViewController.m in Sources */,
+				725FB1941F5EC15E00A9BE6A /* BTDreamDialogController.m in Sources */,
+				72736C751F6123CB001ADA10 /* YERegViewController.m in Sources */,
+				7286DABD1F5D4DC500D2F992 /* AppDelegate.m in Sources */,
+				7203B7A11F5D84670059F0D3 /* BTDiscoverViewController.m in Sources */,
+				72736C701F611F6B001ADA10 /* YEWriteDreamViewController.m in Sources */,
+				7203B76F1F5D5C340059F0D3 /* TADotView.m in Sources */,
+				7203B7841F5D6DA10059F0D3 /* BTCollectionViewCell.m in Sources */,
+				72A6D8591F6A610800E9031F /* ZYDialogController.m in Sources */,
+				7203B7731F5D5C340059F0D3 /* UIView+SDExtension.m in Sources */,
+				7203B7721F5D5C340059F0D3 /* SDCycleScrollView.m in Sources */,
+				728DC45D1F67D06100D27492 /* TEUserManager.m in Sources */,
+				725FB17F1F5E900500A9BE6A /* BTArticleWordCell.m in Sources */,
+				725FB17A1F5E8D6700A9BE6A /* BTArticleAuthorCell.m in Sources */,
+				728DC4631F67DA6700D27492 /* YEModifyPersonInfoViewController.m in Sources */,
+				72DA9B2F1F60E76100459B64 /* YEEyeDiaryTableViewController.m in Sources */,
+				7286DAD51F5D515B00D2F992 /* ZYBaseViewController.m in Sources */,
+				725FB1981F5F84E500A9BE6A /* YEMeTableViewController.m in Sources */,
+				7286DABA1F5D4DC400D2F992 /* main.m in Sources */,
+				728DC4691F67DC6B00D27492 /* YEFocusListViewController.m in Sources */,
+				725FB1711F5E57CD00A9BE6A /* ZYDiscoverTableViewCell.m in Sources */,
+				7203B7701F5D5C340059F0D3 /* TAPageControl.m in Sources */,
+				728DC4661F67DC5600D27492 /* YEFansListViewController.m in Sources */,
+				725633AA1F60145B0029F560 /* JXButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7286DAC61F5D4DC500D2F992 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7286DAC71F5D4DC500D2F992 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7286DACA1F5D4DC500D2F992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7286DACB1F5D4DC500D2F992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7286DACD1F5D4DC500D2F992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00953611E12329BD23D6FE89 /* Pods-YourEye.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = YourEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.search.YourEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7286DACE1F5D4DC500D2F992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8FF443A72BB52D0F62512E /* Pods-YourEye.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INFOPLIST_FILE = YourEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.search.YourEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7286DAB01F5D4DC400D2F992 /* Build configuration list for PBXProject "YourEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7286DACA1F5D4DC500D2F992 /* Debug */,
+				7286DACB1F5D4DC500D2F992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7286DACC1F5D4DC500D2F992 /* Build configuration list for PBXNativeTarget "YourEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7286DACD1F5D4DC500D2F992 /* Debug */,
+				7286DACE1F5D4DC500D2F992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7286DAAD1F5D4DC400D2F992 /* Project object */;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BTCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h1" translatesAutoresizingMaskIntoConstraints="NO" id="l8i-7q-Dc1">
+                        <rect key="frame" x="0.0" y="0.0" width="265" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="l8i-7q-Dc1" secondAttribute="height" multiplier="1:0.618" id="Rtw-wZ-njh"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar2" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-Ax-YZc">
+                        <rect key="frame" x="5" y="218" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="7VA-Nk-PPr"/>
+                            <constraint firstAttribute="height" constant="25" id="QPa-cb-h4e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四月里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-OX-RtL">
+                        <rect key="frame" x="45" y="226.5" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="逛逛苏州小巷的闲适时光" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt8-Ta-mnd">
+                        <rect key="frame" x="5" y="169" width="255" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S1s-OX-RtL" firstAttribute="baseline" secondItem="nhe-Ax-YZc" secondAttribute="baseline" constant="-3" id="29o-79-V9q"/>
+                <constraint firstItem="S1s-OX-RtL" firstAttribute="leading" secondItem="nhe-Ax-YZc" secondAttribute="trailing" constant="15" id="A0w-uF-v9R"/>
+                <constraint firstAttribute="trailing" secondItem="l8i-7q-Dc1" secondAttribute="trailing" id="BVQ-na-7Ic"/>
+                <constraint firstAttribute="bottom" secondItem="nhe-Ax-YZc" secondAttribute="bottom" constant="5" id="F20-yG-qqv"/>
+                <constraint firstAttribute="trailing" secondItem="bt8-Ta-mnd" secondAttribute="trailing" constant="5" id="L33-A7-7gq"/>
+                <constraint firstItem="bt8-Ta-mnd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Roe-Rk-fuf"/>
+                <constraint firstItem="l8i-7q-Dc1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UQ0-QG-rDV"/>
+                <constraint firstItem="nhe-Ax-YZc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="aOa-K2-HUy"/>
+                <constraint firstItem="bt8-Ta-mnd" firstAttribute="top" secondItem="l8i-7q-Dc1" secondAttribute="bottom" constant="5" id="eo7-Dh-7bo"/>
+                <constraint firstItem="l8i-7q-Dc1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hns-p4-OtG"/>
+                <constraint firstItem="nhe-Ax-YZc" firstAttribute="top" secondItem="bt8-Ta-mnd" secondAttribute="bottom" constant="5" id="mZN-RE-bYz"/>
+            </constraints>
+            <size key="customSize" width="265" height="248"/>
+            <connections>
+                <outlet property="authorAvatar" destination="nhe-Ax-YZc" id="nDK-0v-9h3"/>
+                <outlet property="authorName" destination="S1s-OX-RtL" id="fFH-to-132"/>
+                <outlet property="preImage" destination="l8i-7q-Dc1" id="PL9-bR-wlY"/>
+                <outlet property="title" destination="bt8-Ta-mnd" id="Y1M-5o-tst"/>
+            </connections>
+            <point key="canvasLocation" x="-684" y="228"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar2" width="16" height="16"/>
+        <image name="h1" width="338" height="220"/>
+    </resources>
+</document>

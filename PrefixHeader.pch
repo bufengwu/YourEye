@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  YourEye
+//
+//  Created by DevKK on 2017/9/4.
+//  Copyright © 2017年 DevKK. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+//系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+//文件系统路径
+#define Document_Path [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+//颜色
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b)        RGBA(r, g, b, 1.0f)
+
+#define navigationBarColor RGB(0, 201, 209)
+
+#define separaterColor RGB(200, 199, 204)
+
+//屏幕尺寸
+#define SCREEN_RECT [UIScreen mainScreen].bounds
+
+#define SCREEN_WIDTH SCREEN_RECT.size.width
+
+#define SCREEN_HEIGHT SCREEN_RECT.size.height
+
+//状态栏高度
+#define STATUS_BAR_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+
+//NavBar高度
+#define NAVIGATION_BAR_HEIGHT self.navigationController.navigationBar.frame.size.height
+
+#import "TEUserManager.h"
+
+#endif /* PrefixHeader_pch */
